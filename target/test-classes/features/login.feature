@@ -8,6 +8,8 @@ Feature: Login with diffrent username and password
     Then I verify the user able to login
 
     Examples: 
-      | username  | password 	|
-      | name1 		|     5 		| 
-      | name2 		|     7 		| 
+      | username  							| password 			|
+      | standard_user 					| secret_sauce 	| 
+      | locked_out_user 				| secret_sauce 	|  
+			|	problem_user						| secret_sauce 	| 
+			|	performance_glitch_user	| secret_sauce 	| 
